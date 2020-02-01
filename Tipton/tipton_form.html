@@ -1,0 +1,200 @@
+<!--Forms Tipton HTml-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" type="jpg" href="logo.jpg">
+	<link rel="stylesheet"  href="FORMS/Login.css">
+	<link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Montserrat+Subrayada&display=swap" rel="stylesheet">
+	<title>Tipton: Login</title>
+
+	
+
+</head>
+<body>
+	<header>Came Here By Accident? <a href="tipton_rmServ.html"> click me to go back to room service!</a></header>
+	
+	<h1 id="form-title">Tipton Hotel Guest Login Form</h1>
+	<p>Fields marked with an * are required</p>
+	<form id="form">
+		<div class="formRow">
+			<label for="username">username*: </label>
+			<input type="text" name="username" id="username" required>
+		</div>	
+		<br/>
+		<div class="formRow">
+			<label for="email">email*: </label>
+			<input type="email" name="email" id="email" required>
+		</div>
+		<br/>
+		<div class="formRow">
+			<label for="password">password*: </label>
+			<input type="password" name="password" id="password" required>
+		</div>
+		</br>
+		<input id="button" type="button" value="SUBMIT" />
+	<form>
+	<h2 id="verify"></h2>
+	<div id="message">
+  		<h3> username must contain the following:</h3>
+		  
+		  <p id="length" class="invalid">Minimum <b>4 characters</b></p>
+
+		  <h3> Since you're new around here, you'll have to enter the preset password of "12345678" <br>(Don't worry you'll be able to change it once you've signed in!!)</h3>
+
+		  	<p id="pass1" class="invalid"> 12345678???</p>
+	</div>
+	<style>
+		/* The message box is shown when the user clicks on the password field */
+
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color "good" will show upwhen the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "Great";
+}
+
+/* Add a red text color "no good" will come up when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "Missing Something";
+}
+
+h2
+{
+	color: brown;
+	display: block;
+	background-color: white;
+	border: solid;
+	border-color: lightgreen;
+}
+	</style>
+		
+	<!-- Your JavaScript should go in this script element -->	
+	<script>
+		// a bunch of my global variables 
+
+		var myInput = document.getElementById("username");
+		var length = document.getElementById("length");
+		var pass1 = document.getElementById('pass1');
+		// Event listener for the Button function to display the text I preset 
+		document.getElementById("button").addEventListener("click", Button);
+
+
+window.addEventListener("load", function()
+		{
+			document.getElementById("button").onclick = runThis;
+			document.getElementById("password").oninput = passwordCheck;
+			document.getElementById("username").oninput = usernameCheck;
+		});
+		//run the functions (press the button)
+		function runThis()
+		{
+			passwordCheck();
+			usernameCheck();
+			
+
+			//I really tried here I cant get thsi to work right but it still displays the text 
+			/*if (true = usernameCheck) {
+				document.getElementById('verify').textContent = "Form Data Correct: Thank You.";
+			}
+				else{
+					document.getElementById('verify').textContent = "NO!!";
+				}
+
+				I just put it in the wrong spot*/
+		}
+			
+
+	//to display my special checker on the bottom of the form 
+		
+		myInput.onfocus = function() {
+  			document.getElementById("message").style.display = "block";
+			}
+	
+
+	//function to check the password (I also tried to get this to work the right way and it doesnt... i just got it to work 5 minutes after I almost gave up )
+		
+		function passwordCheck()
+		{
+			var pass = document.getElementById("password")
+			
+			if (pass.value ===  "12345678" )
+			{
+				pass1.classList.remove("invalid");
+    		pass1.classList.add("valid");
+		} 
+			else
+				{
+					pass1.classList.remove("valid");
+    			 	pass1.classList.add("invalid");
+				}
+	}
+		//function to check the username
+		function usernameCheck()
+		{
+			 if(document.getElementById("username").value.length >= 4) 
+			 {
+    			length.classList.remove("invalid");
+    			length.classList.add("valid");
+ 			 } 
+ 			 else 
+ 			 {
+   				 length.classList.remove("valid");
+    			 length.classList.add("invalid");
+  				}
+		}
+		// function to get the button to display messages to tell the user if they've completed the form or not 
+		function Button()
+		{
+			var pass = document.getElementById("password")
+
+			if (document.getElementById("username").value.length >= 4 && pass.value ===  "12345678") {
+				document.getElementById('verify').textContent = "We have sent you an email with a link to complete your login. Thank you!";
+			}
+				else if (pass.value ===  "12345678" ) {
+					document.getElementById('verify').textContent = "NOOO Enter Your USERNAME Too!!";
+				}
+				else if (document.getElementById("username").value.length >= 4 ) {
+					document.getElementById('verify').textContent = "NOOO Enter your PASSWORD Too!!";
+				}
+
+				else
+				{
+					document.getElementById('verify').textContent = "NO!! What are you blind?!?! You gotta enter what I asked you for!!"
+				}
+		}
+
+
+		
+	</script>
+	<div id="axis" class="one">
+<img class="object van move-right" src="rooms/van.gif"/>
+</div>
+
+	
+
+
+	
+</body>
+<footer><a href="The_Tipton.html">Back to HOME</a></footer>
+
+</html>

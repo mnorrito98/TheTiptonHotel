@@ -1,0 +1,140 @@
+/* LOGIN FORM CSS TIPTON HOTEL MIKE NORRITO !/30/2020
+
+font-family: 'Montserrat Subrayada', sans-serif;
+font-family: 'Bebas Neue', cursive;
+
+*/
+	
+
+	html
+		{
+			background: lightgreen;
+		}
+
+		body {
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fefcea+0,f1da36+100;Gold+3D */
+		background: rgb(254,252,234); /* Old browsers */
+		background: -moz-linear-gradient(top,  rgba(254,252,234,1) 0%, rgba(241,218,54,1) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  rgba(254,252,234,1) 0%,rgba(241,218,54,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  rgba(254,252,234,1) 0%,rgba(241,218,54,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */
+
+		min-width: 200px;
+		height: auto;
+		border: double;
+		margin-left: 110px;
+		margin-right: 110px;
+		   
+		}
+		
+		
+		body > * {
+			text-align: center;
+		}		
+
+		div.formRow > label {
+			width: 100px;
+			display: inline-block;
+			margin-right: 25px;
+			text-align: right;
+			font-weight: bolder;
+		}
+html
+{
+	font-family: 'Bebas Neue', cursive;
+}
+/*Header Link styles */
+header
+{
+	display: block;
+	background: black;
+	color: white;
+}
+
+header a 
+{
+	text-decoration: none;
+	color: lightgreen;
+
+}
+
+header a:hover
+{
+	color: brown;
+}
+/* Footer Styles Nothing special*/
+
+footer a
+	{
+		text-decoration: none;
+		color: lightgreen;
+		display: block;
+		text-align: center;
+		padding-top: 14px;
+		font-size: 34px;
+
+
+
+	}
+	footer a:hover
+	{
+		color: brown;
+	}
+	footer
+	{
+		display: block;
+		background-color: black;
+		border: double;
+		border-color: green;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+		height: 67px;
+		
+	}
+
+	/*VAN GIF STYLES and such*/
+	.object {
+    position: absolute;
+}
+.van {
+    top: 35%;
+    left: 5%;
+}
+
+#axis:hover .move-right{
+    transform: translate(385px,0);
+    -webkit-transform: translate(385px,0); /** Chrome & Safari **/
+    -o-transform: translate(385px,0); /** Opera **/
+    -moz-transform: translate(385px,0); /** Firefox **/
+}
+
+.object {
+    position: absolute;
+    transition: all 0s ease-in-out;
+    -webkit-transition: all 0s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 0s ease-in-out; /** Firefox **/
+    -o-transition: all 0s ease-in-out; /** Opera **/
+
+    width: 14%;
+}
+
+@media only screen and (max-width: 538px) {
+
+
+footer a
+{
+	font-size: 23px;
+}
+body
+{
+	margin: 0px;
+
+}
+#axis:hover .move-right{
+    transform: translate(111px,0);
+    -webkit-transform: translate(111px,0); /** Chrome & Safari **/
+    -o-transform: translate(111px,0); /** Opera **/
+    -moz-transform: translate(111px,0); /** Firefox **/
+}
+}

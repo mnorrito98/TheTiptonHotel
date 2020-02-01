@@ -1,0 +1,271 @@
+<!--Tipton Room Service HTML-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" type="jpg" href="logo.jpg">
+	<link rel="stylesheet"  href="FORMS/roomServe.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova|Yeseva+One|Yesteryear&display=swap" rel="stylesheet">
+	<title>Tipton: Room Service</title>
+</head>
+<body>
+	<header>
+      
+      <div class="topnav">
+  <a href="javascript:void(0);" class="active" onclick="myFuction()">The Tipton Hotel</a>
+  <div id="myLinks">
+    
+    <a href="The_Tipton.html">Home</a>
+    <a href="tip_RoomsNRates.html">Rooms &amp; Rates</a>
+    <a href="tip_dinner.html">Dining</a>
+    <a href="tipton_rmServ.html">Room Service</a>
+    <a href="tip_RoomsNRates.html">Directions</a>
+    <a href="#">Contact Us</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFuction()">
+    <i class="fa fa-bars"></i>
+  </a>
+   </div>
+      <div>
+         
+         <nav id="toptop">
+            <ul>
+               <li><a href="The_Tipton.html">Home</a></li>
+               <li><a href="tip_RoomsNRates.html">Rooms &amp; Rates</a></li>
+               <li><a href="tip_dinner.html">Dining</a></li>
+               <li><a href="tipton_rmServ.html">Room Service</a></li>
+               <li><a href="tip_RoomsNRates.html">Directions</a></li>
+               <li><a href="#">Contact Us</a></li>
+            </ul>
+         </nav>
+         
+         
+
+         <img id="titTop" src="tipton_logo.png" alt="The Tipton Hotel" />
+          <section class="meme">
+          	<form id="memberForm" method="post" action="">
+            <label class="pass" for="username">Guest Username</label>
+            <input id="username" name="user" type="text" />
+            <label class="pass" for="password">Password</label>
+            <input type="password" id="password" name="pwd" />
+            
+            <div class="trouble">
+            	<h2>New Here? <a id="trouble" href="tipton_form.html">Create a Login!</a></h2>
+            	
+            </div>
+         </form>
+      </section>
+      </div>
+  </header>
+<section class="roomSe">
+      <h1>Room Service!</h1>
+      <p>Thank you for choosing our Room Service Website option in our fine hotel 
+         this site helps you order your food with ease, all you have to do is fill in your information and the dish you would want to get delivered AND thats it! Our <em>Tipton Hotel Employees</em> work hard to deliver the food of your choice as FAST as possible! if your food takes MORE than 45 minutes to get to you not only would it be <em>FREE</em> you would also recieve a <u>complementery</u> Mr. Moseby exclusive <em>Tipton Hotel Handkercheif</em> . </p>
+      <p>These forms are private and confidential. <em>The Tipton Hotel</em> will not share your contact information with third 
+         parties, <u>EVER</u>. </p>
+      <p>Required values are marked by an asterisk (*)</p>
+
+      <a  id="menw" href="FORMS/tip.jpg" target="_blank">Click Here to see our Room Service Menu</a>
+  
+
+      <form id="survey" action="http://www.example.com/TIPTON/survey" method="post">
+         
+
+            <!--LEft SIDE-->
+         <fieldset id="custInfo">
+            <legend>Guest Information</legend>
+            
+         <div class="formRow">
+            <label for="name">Name*</label>
+            <input type="text" name="custName" id="name" placeholder="First and Last name" autofocus required>
+         </div>
+           
+         <div class="formRow">
+            <label for="street">Room Number</label>
+            <input type="text" id="street" name="custStreet" pattern="[0-9]" required>
+          </div>  
+        
+          
+           
+         </div>
+         <div class="formRow">
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="custPhone" id="phone" placeholder="(123) 456-7890" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
+            
+         </div>
+         <div class="formRow">
+            <label for="mail">Email*</label>  
+            <input type="email" name="custEmail" id="mail" required>          
+          </div>  
+
+
+          
+
+          <div class="formRow">
+             <label for="dish">What would you like to order?*</label>
+             <input type="text" name="favDish" id="dish" list="dishType" required>
+
+             <datalist id="dishType">
+                
+               <option value="Breakfast Special 1">
+               <option value="Breakfast Special 2">
+               <option value="Breakfast Special 3">
+               <option value="Lunch Special 1">
+               <option value="Lunch Special 2">
+               <option value="Lunch Special 3">
+               <option value="Dinner Special 1">
+               <option value="Dinner Special 2">
+               <option value="Dinner Special 3">               
+           
+             </datalist>
+          </div>
+
+           <label for="commBox">Special Requests Such as But NOT limited too Allergies or  Substitutions</label>
+             <textarea name="custExp" id="commBox" placeholder="PLEASE TELL US ABOUT ANY ALLERGIES YOU MAY HAVE."></textarea>
+
+
+          <div class="formRow">
+             <label for="dineSpin">How many orders would you like?*</label>
+             <input type="number" name="dineOut" id="dineSpin" value="1" step="1" min="0" max="10" required>
+          </div>
+          <div class="formRow">
+               <label>Want the surprise VIP Package? (30 extra dollars)</label>
+               <fieldset class="optGroup">
+                  <label for="fYes">Yes</label>
+                  <input type="radio" name="sFriend" id="fYes"  value="yes">
+                  <label for="fNo">No</label>
+                  <input type="radio" name="sFriend" id="fNo"  value="no">
+                </fieldset>
+             </div>
+
+          <input type="checkbox" name="mailme" id="mailCB" value="yes">
+          <label for="mailCB">Add me to The Tipton Hotels Special Maling Club For Deals on Rooms Rates and Food!</label>
+
+
+
+
+
+
+         </fieldset>
+
+
+         <!--RIGHT SIDE OF FORM-->
+
+         <fieldset id="expInfo">
+            <legend>Share Your Experience</legend>
+
+            <div class="formRow">
+               <label for="visit"> Date me please</label>
+               <input type="date" name="visitDate" id="visit">
+             </div>
+
+             <div class="formRow">
+               <label for="order">Order Type</label>
+               <select name="orderType" id="order">
+                  <!--<option>Please Choose One</option>    dummy option-->
+                  <option value="order1">Dine in</option>
+                  <option value="order2" selected>Room Service</option>
+                  
+           
+                   </select>
+
+                 </div>
+                     <!--YES/NO questions radio buttons-->
+ 
+
+            <div class="formRow">
+               <label>Was your service friendly?</label>
+               <fieldset class="optGroup">
+                  <label for="fYes">Yes</label>
+                  <input type="radio" name="sFriend" id="fYes"  value="yes">
+                  <label for="fNo">No</label>
+                  <input type="radio" name="sFriend" id="fNo"  value="no">
+                </fieldset>
+             </div>
+
+
+             <div class="formRow">
+               <label>Was your order correct?</label>
+               <fieldset class="optGroup">
+                  <label for="cYes">Yes</label>
+                  <input type="radio" name="oCorrect" id="cYes"  value="yes">
+                  <label for="cNo">No</label>
+                  <input type="radio" name="oCorrect" id="cNo"  value="no">
+                </fieldset>
+             </div>
+
+              <div class="formRow">
+               <label>Was your food hot?</label>
+               <fieldset class="optGroup">
+                  <label for="hYes">Yes</label>
+                  <input type="radio" name="foodHot" id="hYes"  value="yes">
+                  <label for="hNo">No</label>
+                  <input type="radio" name="foodHot" id="hNo"  value="no">
+                </fieldset>
+             </div>
+
+             <div class="formRow">
+               <label for="rangeBox">Rate the overall service<br>
+                  (0=poor; 10=great) </label>
+
+               0
+               <input type="range" name="serviceRate" id="rangeBox" value="5" step="1" min="0" max="10">
+
+               10
+               
+               </div>
+
+             <label for="commBox">Tell us more about moster trucks!!!</label>
+             <textarea name="custExp" id="commBox" placeholder="I AM THE MONSTER TRUCK MAN BE SCARED OF MEEEEEE"></textarea>
+
+
+        
+
+
+
+         </fieldset>
+
+         <div id="buttons">
+            <input id="surprise" type="submit" value="Add To My Cart">
+            <input id="reset" type="reset" value="Cancel">
+         </div>
+
+      </form>
+
+     
+   </section>
+
+   <script defer>
+   	window.onload = setForm;
+
+	function setForm() {
+   	document.forms[0].onsubmit = function() {
+      if (this.checkValidity()) alert("Your cart has been updated, Thank You!!");
+      return false;
+   }
+}
+   </script>
+    <script>
+
+function myFuction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+<footer>
+      <em>The Tipton Hotel NYC</em> &#9702;
+      37 E 12th St &#9702;
+      New York, NY 10003 &#9702;
+      (802) 343-7639
+   </footer>
+</body>
+</html>

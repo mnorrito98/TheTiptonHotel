@@ -1,0 +1,205 @@
+
+<!-- The restaurant page!! ooo fun THe tipton hotel 1/29/2020
+
+
+<img src="dine/food_1.jpg" alt="one of our many choices in fine wine">
+<img src="dine/food_2.jpg" alt="A picture of the dining room exclusivley dine in our five star eating establishment" >
+
+
+
+<img src="dine/food_3.jpg" alt="A picture of the dining room exclusivley dine in our five star eating establishment" >
+	<img src="rooms/Carey.jpg" alt="Carey Martin the best classical singiner in the east coast">
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tipton: Dining</title>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="dinner.css">
+	<link rel="icon" type="jpg" href="logo.jpg">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova|Yeseva+One|Yesteryear&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bad+Script|Lily+Script+One|Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+
+	<style>
+
+ /* styling for the hours nav bar that will display when it reduces size to Mobile */
+
+
+  .mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #0F7B47;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+.topnav h3
+{
+  color: lightgreen;
+  padding: 14px 16px;
+  font-size: 17px;
+  display: block;
+
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: lightgreen;
+  color: black;
+}
+
+.active {
+  background-color: #0F7B47;
+  color: white;
+
+}
+
+
+
+</style>
+</head>
+<body>
+
+	<header>
+		 <div class="topnav">
+  <a  class="active" onclick="myFuction2()">The Tipton Hotel</a>
+  <div id="myLinks2">
+    
+    <a href="The_Tipton.html">Home</a>
+    <a href="tip_RoomsNRates.html">Rooms &amp; Rates</a>
+    <a href="tip_dinner.html">Dining</a>
+    <a href="tipton_rmServ.html">Room Service</a>
+    <a href="tip_RoomsNRates.html">Directions</a>
+    <a href="#">Contact Us</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFuction2()">
+    <i class="fa fa-bars"></i>
+  </a>
+   </div>
+      <div>
+         
+         <nav id="toptop">
+            <ul>
+               <li><a href="The_Tipton.html">Home</a></li>
+               <li><a href="tip_RoomsNRates.html">Rooms &amp; Rates</a></li>
+               <li><a href="tip_dinner.html">Dining</a></li>
+               <li><a href="tipton_rmServ.html">Room Service</a></li>
+               <li><a href="tip_RoomsNRates.html">Directions</a></li>
+               <li><a href="#">Contact Us</a></li>
+            </ul>
+         </nav>
+         <img id="titTop" src="tipton_logo.png" alt="The Tipton Hotel" />
+      </div>
+  </header>
+
+<h3 id="oh">The Tipton Hotel's Five Star Restuarant</h3>
+<h1 id="name">Basilico in Città</h1>
+<div class="topnav">
+  <a href="javascript:void(0);" class="active" onclick="myFuction()">Hours</a>
+  <div id="myLinks">
+    
+    <h3>Mon-Fri: 4:30pm-10:30pm</h3>
+    <h3>Sat-Sun: 3:30pm-11:30pm</h3>
+    <a href="tel:802-343-7639">Make a Reservation!</a>
+    <a href="#news">News</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFuction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+<div class="desk">
+<h1>Hours:</h1>
+<h3>Mon-Fri: 4:30pm-10:30pm</h3>
+   <h3>Sat-Sun: 3:30pm-11:30pm</h3>
+   <a id="res" href="tel:802-343-7639">Make a Reservation!</a>
+</div>
+<div id="restImg">
+	
+	
+	
+	
+	<img id="menu" src="dine/Menu.jpg">
+
+</div>
+<div>
+	<h4 id="mobileLink">Link to our Menu: </h4><a id="ew" href="dine/Menu.jpg"target="_blank">Menu Time</a>
+</div>
+<section id="fade">
+  <img class="bottom" src="dine/food_1.jpg" alt=" food from our restuarant image 1 of 2 that fade into each other " />
+  <img class="top" src="dine/food_3.jpg"  alt="img 2 of 2 that fade" />
+</section>
+<img id="foodp" src="dine/food_3.jpg" alt="A picture of the dining room exclusivley dine in our five star eating establishment" >
+
+
+
+    
+
+
+<script>
+
+function myFuction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+function myFuction2() {
+  var x = document.getElementById("myLinks2");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</body>
+<footer>
+	<div>
+         
+         <nav id="bottop">
+            <ul>
+               <li><a href="The_Tipton.html">Home</a></li>
+               <li><a href="tip_RoomsNRates.html">Rooms &amp; Rates</a></li>
+               <li><a href="tip_dinner.html">Dining</a></li>
+               <li><a href="tipton_rmServ.html">Room Service</a></li>
+               <li><a href="tip_RoomsNRates.html">Directions</a></li>
+               <li><a href="#">Contact Us</a></li>
+            </ul>
+         </nav>
+     </div>
+     </footer>
+</html>

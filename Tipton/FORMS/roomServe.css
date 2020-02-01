@@ -1,0 +1,505 @@
+/* Tipton ROOM SERVICE CSS
+
+
+font-family: 'Dancing Script', cursive;
+
+
+   font-family: 'Yeseva One', cursive;
+font-family: 'Yesteryear', cursive;
+font-family: 'Ibarra Real Nova', serif;
+
+
+*/
+
+
+/* BASIC STYLING ON EVERY PAGE */
+.topnav
+{
+	display: none;
+}
+.meme
+{
+	
+	margin-top: 0px;
+	padding-left: 23px;
+
+}
+html
+{
+	font-family: 'Yeseva One', cursive;
+}
+
+h1
+{
+	font-size: 3em;
+	font-family: 'Dancing Script', cursive;
+
+}
+/* Link to the picture of the menu */
+a#menw
+{
+	text-decoration: none;
+	color: lightgreen;
+	background: rgb(125,126,125); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+
+	padding: 7px;
+	border-radius: 16px;
+
+
+}
+
+a#menw:hover
+{
+	color: white;
+}
+fieldset label
+{
+	color: white;
+	text-shadow: 1px 1px 4px black;
+}
+
+p
+{
+	padding: 12px;
+}
+a#trouble
+{
+	color: lightgreen;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
+	background: rgb(125,126,125); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+
+	padding: 7px;
+	border-radius: 16px;
+	text-decoration-color: transparent;
+
+}
+
+a#trouble:hover
+{
+	color: white;
+}
+
+
+input#surprise
+{
+	color: lightgreen;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
+	background: rgb(125,126,125); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+
+	padding: 7px;
+	border-radius: 16px;
+	text-decoration-color: transparent; 
+}
+
+
+input#surprise:hover
+{
+	cursor: pointer;
+	color: white;
+}
+
+
+
+
+
+
+
+input#reset
+{
+	color: lightgreen;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
+	background: rgb(125,126,125); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+
+	padding: 7px;
+	border-radius: 16px;
+	text-decoration-color: transparent; 
+}
+
+input#reset:hover
+{
+	cursor: pointer;
+	color: white;
+}
+html {
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fefcea+0,f1da36+100;Gold+3D */
+background: rgb(254,252,234); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(254,252,234,1) 0%, rgba(241,218,54,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(254,252,234,1) 0%,rgba(241,218,54,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(254,252,234,1) 0%,rgba(241,218,54,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */
+
+min-width: 200px;
+   
+}
+*{
+   box-sizing: border-box;
+}
+
+/* The Header WILL folllow me!!!*/
+
+
+
+html, body {
+    max-width: 1255px;
+    margin: 0 auto;
+    
+
+  
+}
+
+   
+   body nav#toptop ul {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row nowrap;
+   flex-flow: row nowrap;
+   justify-content: center;
+   -webkit-align-items: center;
+   align-items: center;
+   height: 50px;
+   border-top: 4px double black;
+   border-bottom: 4px double black;
+   background-color: rgb(15, 123, 71 );
+   width: 100%;
+  
+   margin-top: 0px;
+   z-index: 833;
+
+}
+   
+nav#toptop ul li {
+   -webkit-flex: 0 1 100px;
+   flex: 0 1 100px;   
+   margin: 10px;
+   text-decoration: none;
+   list-style: none;
+}
+
+nav#toptop ul li a {
+   color: black;
+   display: block;
+   font-size: 1em;
+   text-align: center;
+   padding: 0% 0%;
+   text-decoration: none;
+
+}
+
+nav#toptop ul li a:hover, nav#toptop ul li a:active {
+   color: white;
+}
+
+img#titTop
+{
+   
+   max-width: 100%;
+   padding-top: 0px;
+   margin-top: 0px;
+   
+}
+
+
+/* paragraph styles*/
+section.roomSe
+{
+	text-align: center;
+	display: block;
+	background-color: gold;
+	border-radius: 22px;
+	height: auto;
+	width: 100%;
+	border: double;
+}
+
+/* Form Layout Styles */
+
+div.formRow
+{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	margin: 7px 0px;
+}
+
+div.formRow > *
+{
+	-webkit-flex: 1 1 150px;
+	flex: 1 1 150px;
+}
+
+form#survey
+{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+form#survey > fieldset
+{
+	
+	background-image: url("back.jpg");
+	background-size: cover;
+	background-attachment:fixed;
+	background-position: fixed;
+
+
+	
+	background-color: rgb(241, 232, 181);
+
+	border-radius: 20px;
+	-webkit-flex: 1 1 300px;
+	flex: 1 1 300px;
+	font-size: 0.85em;
+	padding: 10px;
+	margin: 10px;
+}
+
+/* Legend Styles */
+legend
+{
+	background: rgb(125,126,125); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+	color: white;
+	padding: 5px;
+	border-top-right-radius: 18px;
+	border-top-left-radius: 18px;
+}
+
+
+
+/* Text Area Styles */
+textarea
+{
+	margin-top: 10px;
+	height: 100px;
+	width: 95%;
+	min-width: 95%;
+	min-height: 90px;
+	max-width: 90px;
+	max-height: 220px;
+}
+
+
+
+/* Spinner Styles */
+div.formRow > input#dineSpin
+{
+	-webkit-flex: 0 0 50px;
+	flex: 0 0 50px;
+}
+
+
+
+/* Form Button Styles */
+div#buttons
+{
+	text-align: center;
+	width: 100%;
+}
+
+input[type='submit'], input[type='reset']
+{
+	font-size: 1.2em;
+	padding: 5px;
+	margin: 15px;
+}
+
+/* Validation Styles */
+input:focus, select:focus, textarea:focus
+{
+	background-color: rgb(220, 255, 220);
+}
+
+input#name:focus:valid,
+input#zip:focus:valid,
+input#phone:focus:valid,
+input#mail:focus:valid
+{
+	background: rgb(220,255,220) url(rb_valid.png) bottom right/contain
+	no-repeat;
+}
+
+input#name:focus:invalid,
+input#zip:focus:invalid,
+input#phone:focus:invalid,
+input#mail:focus:invalid
+{
+	background: rgb(255,232,233) url(rb_invalid.png) bottom right/contain
+	no-repeat;
+}
+
+
+footer
+{
+	text-align: center;
+	font-family: "Times New Roman", cursive;
+}
+
+
+@media only screen and (max-width: 560px) {
+  /* For mobile phones: */
+ 
+  
+  .meme
+  {
+  	width: 100%;
+  	text-align: center;
+
+  }
+
+  input#password
+  {
+  	color: blue;
+  }
+
+  label.pass
+  {
+  	color: teal;
+  	display: block;
+  	width: 100%;
+  }
+
+  
+  /* styling for the hours nav bar that will display when it reduces size to Mobile */
+
+
+  .mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #0F7B47;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+.topnav h3
+{
+  color: lightgreen;
+  padding: 14px 16px;
+  font-size: 17px;
+  display: block;
+
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: lightgreen;
+  color: black;
+}
+
+.active {
+  background-color: #0F7B47;
+  color: white;
+
+}
+.topnav
+{
+  display: block;
+}
+
+
+nav#toptop
+{
+  display: none;
+}
+img#titTop
+{
+  padding-top: 0px;
+}
+
+
+form#survey > fieldset
+{
+	background-image: none;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#c9de96+0,8ab66b+44,398235+100;Green+3D+%233 */
+background: rgb(201,222,150); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(201,222,150,1) 0%, rgba(138,182,107,1) 44%, rgba(57,130,53,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9de96', endColorstr='#398235',GradientType=0 ); /* IE6-9 */
+
+
+
+}
+fieldset label
+{
+	color: white;
+}
+a#menw
+{
+	padding-bottom: 23px;
+}
+}
+/*---------------Ipad------------*/
+
+@media only screen and (max-width: 800px) {
+
+
+a#menw
+{
+	padding-bottom: 123px;
+}
+.meme
+  {
+  	width: 100%;
+  	text-align: center;
+
+  }
+
+  input#password
+  {
+  	color: blue;
+  }
+
+  label.pass
+  {
+  	color: teal;
+  	display: block;
+  	width: 100%;
+  }
+
+}
